@@ -38,6 +38,8 @@ new Vue({
         addNewProduct() {
 
             this.items.push({ name: this.newProduct, price: this.newPrice });
+            this.newProduct='';
+            this.newPrice='';
         },
         removeProduct(index) {
             console.log(index);
@@ -54,6 +56,8 @@ new Vue({
         updateProduct(index){
             this.items[index].name=this.newProduct;
             this.items[index].price=this.newPrice;
+            this.newProduct='';
+            this.newPrice='';
 
         }
     }

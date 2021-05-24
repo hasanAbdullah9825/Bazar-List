@@ -22,9 +22,9 @@
                                     <form action="" @submit.prevent="onSubmit">
                                      <label for="" v-if="edit==false">Add new product</label>
                                      <label for="" v-if="edit==true">Edit product</label>
-                                     <input v-model="newProduct" type="text" class="form-control" >
+                                     <input v-model="newProduct" type="text" class="form-control" required >
                                      <label for="">Price</label>
-                                     <input v-model="newPrice" type="text" class="form-control" >
+                                     <input v-model="newPrice" type="text" class="form-control" required>
                                      <button class="btn btn-primary my-2" type="submit">Add</button>
                                     </form>
                                  </div>
